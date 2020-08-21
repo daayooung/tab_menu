@@ -24,6 +24,12 @@ const Contents = ({ history }) => {
 
   return (
     <div className="contents">
+      {currentPage === '/' && (
+        <img
+          src={require('../../images/hogwart_mark.png')}
+          alt="호그와트 마크"
+        ></img>
+      )}
       <p>{initData.contents}</p>
       {initData === depth2Data &&
         initData.map((data) => <p key={data.url}>{data.contents}</p>)}

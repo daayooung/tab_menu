@@ -41,7 +41,9 @@ const TabContents = ({ match, history }) => {
       </ul>
       <ul className="tab_contents">
         {contents.map((data) => (
-          <li key={data}>{data}</li>
+          <li className="contents_list" key={data}>
+            {data}
+          </li>
         ))}
       </ul>
       {/* Q) 최초 contents외에 setContents로 바꾼 값에는 <li></li>가 적용되지 않고 있다.*/}

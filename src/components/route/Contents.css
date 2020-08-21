@@ -1,4 +1,15 @@
 .contents {
   margin-top: 40px;
   margin-left: 40px;
+  line-height: 2rem;
+}
+
+.contents_list {
+  margin-top: 1rem;
+}
+
+img {
+  display: block;
+  width: 350px;
+  margin: 0 auto;
 }

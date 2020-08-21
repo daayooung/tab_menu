@@ -11,7 +11,7 @@ const Sidebar = () => {
         <h1 className="logo">
           <img
             src={require('../../images/harry.png')}
-            alt="해리포터 로고"
+            alt="해리포터 얼굴 로고"
           ></img>
         </h1>
         <ul>
