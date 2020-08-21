@@ -5,7 +5,7 @@ import SidebarItem from './components/common/SidebarItem';
 import Contents from './components/route/Contents';
 import NotFound from './components/route/NotFound';
 import TabContents from './components/route/TabContents';
-import DoubleTabContents from './components/route/DoubleTabContents';
+// import DoubleTabContents from './components/route/DoubleTabContents';
 import { sitemap } from './api/Sitemap.json';
 import './App.css';
 
@@ -49,7 +49,7 @@ function App() {
                 />
               )}
             />
-            <Route
+            {/* <Route
               path="/series"
               render={({ match, history }) => (
                 <DoubleTabContents
@@ -58,7 +58,7 @@ function App() {
                   history={history}
                 />
               )}
-            />
+            /> */}
             <Route
               render={({ location }) => <NotFound location={location} />}
             />

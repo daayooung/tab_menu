@@ -1,40 +1,40 @@
 {
-  "series_data": [
+  "series_map": [
     {
       "path": "/series/movie",
       "pagename": "영화",
       "depth2": [
         {
           "path": "/series/movie/1",
-          "contents": "해리 포터와 마법사의 돌"
+          "pagename": "시리즈1"
         },
         {
           "path": "/series/movie/2",
-          "contents": "해리 포터와 비밀의 방"
+          "pagename": "시리즈2"
         },
         {
           "path": "/series/movie/3",
-          "contents": "해리 포터와 아즈카반의 죄수"
+          "pagename": "시리즈3"
         },
         {
           "path": "/series/movie/4",
-          "contents": "해리 포터와 불의 잔"
+          "pagename": "시리즈4"
         },
         {
           "path": "/series/movie/5",
-          "contents": "해리 포터와 불사조 기사단"
+          "pagename": "시리즈5"
         },
         {
           "path": "/series/movie/6",
-          "contents": "해리 포터와 혼혈왕자"
+          "pagename": "시리즈6"
         },
         {
           "path": "/series/movie/7",
-          "contents": "해리 포터와 죽음의 성물 1"
+          "pagename": "시리즈7"
         },
         {
           "path": "/series/movie/8",
-          "contents": "해리 포터와 죽음의 성물 2"
+          "pagename": "시리즈8"
         }
       ]
     },
@@ -44,35 +44,35 @@
       "depth2": [
         {
           "path": "/series/book/1",
-          "contents": "해리 포터와 마법사의 돌 (1997)"
+          "pagename": "시리즈1"
         },
         {
           "path": "/series/book/2",
-          "contents": "해리 포터와 비밀의 방 (1998)"
+          "pagename": "시리즈2"
         },
         {
           "path": "/series/book/3",
-          "contents": "해리 포터와 아즈카반의 죄수 (1999)"
+          "pagename": "시리즈3"
         },
         {
           "path": "/series/book/4",
-          "contents": "해리 포터와 불의 잔 (2000)"
+          "pagename": "시리즈4"
         },
         {
           "path": "/series/book/5",
-          "contents": "해리 포터와 불사조 기사단 (2003)"
+          "pagename": "시리즈5"
         },
         {
           "path": "/series/book/6",
-          "contents": "해리 포터와 혼혈왕자 (2005)"
+          "pagename": "시리즈6"
         },
         {
           "path": "/series/book/7",
-          "contents": "해리 포터와 죽음의 성물 (2007)"
+          "pagename": "시리즈7"
         },
         {
           "path": "/series/book/8",
-          "contents": "해리 포터와 저주받은 아이 (2016)"
+          "pagename": "시리즈8"
         }
       ]
     }
