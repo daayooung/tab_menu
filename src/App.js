@@ -4,7 +4,7 @@ import Sidebar from './components/common/Sidebar';
 import SidebarItem from './components/common/SidebarItem';
 import Contents from './components/route/Contents';
 import NotFound from './components/route/NotFound';
-// import TabContents from './components/route/TabContents';
+import TabContents from './components/route/TabContents';
 import { sitemap } from './api/Sitemap.json';
 import './App.css';
 
@@ -41,7 +41,11 @@ function App() {
             <Route
               path="/series"
               render={({ match, history }) => (
-                <Contents navInfo={navInfo} match={match} history={history} />
+                <TabContents
+                  navInfo={navInfo}
+                  match={match}
+                  history={history}
+                />
               )}
             />
             <Route

@@ -1,5 +1,6 @@
 import React from 'react';
 import { data } from '../../api/Data.json';
+import './Contents.css';
 
 const Contents = ({ history }) => {
   let currentPage = history.location.pathname;
@@ -22,7 +23,7 @@ const Contents = ({ history }) => {
   }
 
   return (
-    <div>
+    <div className="contents">
       <p>{initData.contents}</p>
       {initData === depth2Data &&
         initData.map((data) => <p key={data.url}>{data.contents}</p>)}

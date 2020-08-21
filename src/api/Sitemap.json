@@ -31,16 +31,7 @@
     {
       "path": "/series",
       "pagename": "시리즈",
-      "depth2": [
-        {
-          "path": "/movie",
-          "pagename": "영화"
-        },
-        {
-          "path": "/book",
-          "pagename": "책"
-        }
-      ]
+      "depth2": []
     }
   ]
 }
