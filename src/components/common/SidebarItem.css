@@ -1,8 +1,14 @@
-.depth1 {
-  padding: 15px 0;
-}
-
 .depth1:hover {
   background: rgb(42, 42, 1);
   position: relative;
+}
+
+.depth1_link {
+  display: inline-block;
+  width: 100%;
+  padding: 15px 0;
+}
+
+.depth1_link.active {
+  background: rgb(42, 42, 1);
 }

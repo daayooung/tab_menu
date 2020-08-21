@@ -6,7 +6,6 @@
 .tab li {
   position: relative;
   width: 50%;
-  padding: 10px 0;
   float: left;
   text-align: center;
   background: rgb(59, 57, 0);
@@ -17,11 +16,17 @@
   background: rgb(42, 42, 1);
 }
 
-.tab li a {
-  padding: 10px 135px;
+.tab li .tab_title {
+  display: inline-block;
+  width: 100%;
+  padding: 10px 0;
 }
 
 .tab_contents {
   width: 100%;
   padding: 65px 25px 0;
+}
+
+.tab_title.active_tab {
+  background: rgb(42, 42, 1);
 }

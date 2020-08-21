@@ -17,18 +17,24 @@ const TabContents = ({ match, history }) => {
 
   const onClickTab = (e) => {
     let currentPage = series.filter(
-      (data) => e.currentTarget.pathname === data.url
+      (series) => e.currentTarget.pathname === series.url
     );
-    setContents(currentPage.map((data) => data.contents));
+    setContents(currentPage.map((series) => series.contents));
+    console.log(contents);
   };
 
   return (
     <>
       <ul className="tab">
-        {series.map((data) => (
-          <li key={data.url}>
-            <NavLink to={data.url} className="tab_title" onClick={onClickTab}>
-              {data.pagename}
+        {series.map((series) => (
+          <li key={series.url}>
+            <NavLink
+              to={series.url}
+              className="tab_title"
+              activeClassName="active_tab"
+              onClick={onClickTab}
+            >
+              {series.pagename}
             </NavLink>
           </li>
         ))}
@@ -37,8 +43,8 @@ const TabContents = ({ match, history }) => {
         {contents.map((data) => (
           <li key={data}>{data}</li>
         ))}
-        {/* li 형태가 최초에만 유지됨 */}
       </ul>
+      {/* Q) 최초 contents외에 setContents로 바꾼 값에는 <li></li>가 적용되지 않고 있다.*/}
     </>
   );
 };
