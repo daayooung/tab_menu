@@ -1,0 +1,22 @@
+.depth2 {
+  display: none;
+  margin-top: 30px;
+}
+
+.depth1:hover .depth2 {
+  display: block;
+  transition: transform 0.5s easy-in-out;
+}
+
+.depth2 li {
+  padding: 10px 0;
+}
+
+.depth1:hover .depth2::after {
+  display: block;
+  position: absolute;
+  top: 50px;
+  content: '';
+  width: 150px;
+  border-bottom: 1px solid wheat;
+}

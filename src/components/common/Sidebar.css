@@ -1,0 +1,15 @@
+aside {
+  width: 150px;
+  height: 100%;
+  float: left;
+  background: rgb(59, 57, 0);
+  text-align: center;
+}
+
+.logo {
+  padding: 20px 0;
+}
+
+.logo img {
+  width: 40px;
+}

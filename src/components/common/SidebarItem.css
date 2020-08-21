@@ -1,0 +1,8 @@
+.depth1 {
+  padding: 15px 0;
+}
+
+.depth1:hover {
+  background: rgb(42, 42, 1);
+  position: relative;
+}
