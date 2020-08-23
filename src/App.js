@@ -4,8 +4,7 @@ import Sidebar from './components/common/Sidebar';
 import SidebarItem from './components/common/SidebarItem';
 import Contents from './components/route/Contents';
 import NotFound from './components/route/NotFound';
-// import TabContents from './components/route/TabContents';
-import DoubleTabContents from './components/route/DoubleTabContents';
+import DoubleTab from './components/route/DoubleTab';
 import { sitemap } from './api/Sitemap.json';
 import './App.css';
 
@@ -39,24 +38,10 @@ function App() {
                 <Contents navInfo={navInfo} match={match} history={history} />
               )}
             />
-            {/* <Route
-              path="/series"
-              render={({ match, history }) => (
-                <TabContents
-                  navInfo={navInfo}
-                  match={match}
-                  history={history}
-                />
-              )}
-            /> */}
             <Route
               path="/series"
               render={({ match, history }) => (
-                <DoubleTabContents
-                  navInfo={navInfo}
-                  match={match}
-                  history={history}
-                />
+                <DoubleTab navInfo={navInfo} match={match} history={history} />
               )}
             />
             <Route
