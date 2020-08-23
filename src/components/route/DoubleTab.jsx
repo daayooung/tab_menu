@@ -39,17 +39,19 @@ const DoubleTabContents = () => {
             key={series.path}
           />
         ))}
-        <ul className="tab2">
-          {tab2 &&
-            tab2.map((depth2, i) => (
-              <TabDepth2
-                key={depth2 + i}
-                depth2={depth2}
-                onClickDepth2={onClickDepth2}
-                tab2Contents={tab2Contents}
-              />
-            ))}
-        </ul>
+        <li>
+          <ul className="tab2">
+            {tab2 &&
+              tab2.map((depth2, i) => (
+                <TabDepth2
+                  key={depth2 + i}
+                  depth2={depth2}
+                  onClickDepth2={onClickDepth2}
+                  tab2Contents={tab2Contents}
+                />
+              ))}
+          </ul>
+        </li>
       </ul>
     </div>
   );
