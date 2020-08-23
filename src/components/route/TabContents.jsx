@@ -3,14 +3,14 @@ import { NavLink } from 'react-router-dom';
 import { series_data as series } from '../../api/series_data.json';
 import './TabContents.css';
 
-const TabContents = ({ match, history }) => {
+const TabContents = () => {
   const [contents, setContents] = useState(series[0].contents);
 
   const onClickTab = (e) => {
     let currentPage = series.filter(
       (series) => e.currentTarget.pathname === series.path
     );
-    setContents(currentPage.map((series) => series.contents));
+    setContents(currentPage.map((series) => series.contents)[0]);
     console.log(contents);
   };
 
